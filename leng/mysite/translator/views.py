@@ -36,7 +36,7 @@ def upload(request):
     return render(request, 'translator/upload.html')
 
 
-'''
+
 def transfer(mytext,lang):
    IAM_TOKEN = ''
    folder_id = ''
@@ -64,7 +64,7 @@ def transfer(mytext,lang):
         return 'error'
 
 
-'''
+
 def translate_app(request):
  try:
     if request.method == "POST":
@@ -73,7 +73,7 @@ def translate_app(request):
         txt = request.POST.get("txt", None)
 
 
-       # tr = transfer(txt,lang)
+        tr = transfer(txt,lang)
         translator = Translator()
         tr = translator.translate(txt, dest=lang)
         return render(request, 'translator/menu.html', {"result":tr.text})
