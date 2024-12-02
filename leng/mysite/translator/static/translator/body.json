@@ -1,0 +1,6 @@
+{
+  "mimeType": "JPEG",
+  "languageCodes": ["*"],
+  "model": "page",
+  "content": "<изображение_в_кодировке_base64>"
+}
