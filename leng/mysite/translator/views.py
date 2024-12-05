@@ -38,8 +38,8 @@ def upload(request):
 
 
 def transfer(mytext,lang):
-   IAM_TOKEN = ''
-   folder_id = ''
+   IAM_TOKEN = TOKEN
+   folder_id = ID
    target_language = lang
    texts = mytext
 
@@ -86,7 +86,7 @@ def translate_app(request):
  import sys
  import json
 
- SMARTCAPTCHA_SERVER_KEY =""
+ SMARTCAPTCHA_SERVER_KEY =SERVER_KEY
  def get_ip(request):
 
      ip = request.META.get('HTTP_X_FORWARDED_FOR', '').split(',')[0]
