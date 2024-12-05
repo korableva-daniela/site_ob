@@ -4,6 +4,7 @@ env.read_env(env.str('ENV_PATH', '.env'))
 TOKEN = env('TOKEN')
 ID = env('ID')
 SERVER_KEY = env('SERVER_KEY')
+environ.Env.read_env()
 from django.core.files.storage import FileSystemStorage
 def index(request):
     return render(request, 'translator/capch.html')
